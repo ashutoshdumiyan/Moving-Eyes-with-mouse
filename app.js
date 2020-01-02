@@ -1,6 +1,6 @@
 const eyeBall = document.querySelectorAll('.eye-ball');
 // console.log(eyeBall);
-document.addEventListener('mousemove', function () {
+document.addEventListener('mousemove', (event) => {
     let x = event.clientX * 100 / window.innerWidth + "%";
     let y = event.clientY * 100 / window.innerHeight + "%";
     console.log(x + y);
